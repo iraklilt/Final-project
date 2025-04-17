@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <h1><%= title %></h1>
+    <form class="input-form" action="/login" method="post">
+        <input type="text" name="inputemail">
+        <input type="text" name="inputpassword">
+        <button type="submit">log in</button>
+    </form>
+    <p>Welcome to <%= title %></p>
+    <p>to register click here<a href="/register">Register</a></p>
+</body>
+</html>
