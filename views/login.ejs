@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
 </head>
 <body>
-    <h1><%= title %></h1>
-    <form class="input-form" action="/login" method="post">
-        <input type="text" name="inputemail">
-        <input type="text" name="inputpassword">
-        <button type="submit">log in</button>
+<div class="form-container">
+    <h1>Login</h1>
+
+    <% if (error) { %>
+        <p class="error"><%= error %></p>
+    <% } %>
+
+    <form action="/login" method="POST">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
     </form>
-    <p>Welcome to <%= title %></p>
-    <p>to register click here<a href="/register">Register</a></p>
+
+    <p>Don't have an account? <a href="/register">Register here</a>.</p>
+</div>
 </body>
 </html>
