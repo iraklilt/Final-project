@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blogs</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<h1>All Blogs</h1>
+<a href="/logout">Logout</a>
+<form class="post-form" action="/blogs" method="POST">
+    <input type="text" name="name" placeholder="name">
+    <input type="text" name="title" placeholder="Title">
+    <input type="date" name="date" placeholder="date">
+    <input type="text" name="content" placeholder="Content">
+    <div class="buttons">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+<div class="post">
+    <h1 class="post-title"> <%= posts.title %> </h1>
+    <p class="post-author">author</p>
+    <p class="post-date">Posted on September 28, 2018</p>
+    <p class="post-content">content</p>
+</div>
+
+</body>
+</html>

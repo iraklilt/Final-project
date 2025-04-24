@@ -1,30 +1,6 @@
 [
   {
-    "email": "123@123.ss",
-    "password": "123"
-  },
-  {
-    "email": "123@123.sss",
-    "password": "123"
-  },
-  {
-    "email": "43@43.ss",
-    "password": "123s"
-  },
-  {
     "email": "iraklilt@gmail.com",
-    "password": "ss"
-  },
-  {
-    "email": "iraklilt@gmail.com",
-    "password": "ss"
-  },
-  {
-    "email": "iraklilt@gmail.com",
-    "password": "dd"
-  },
-  {
-    "email": "ss@ss.dddd",
-    "password": "22"
+    "password": "$2b$10$ERyP.6T3cPwb6Fd4DU2Xz.0dg8Vze6axML6nN6kuBw2Jc97xsZWtm"
   }
 ]
